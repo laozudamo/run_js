@@ -12,10 +12,10 @@ const isArr = item => Array.isArray(item)
 // }
 
 const res = []
-function flatArr(arr) {
+function flatArr (arr) {
   if (!isArr(arr)) return
   arr.forEach(item => {
-    if(isArr(item)) {
+    if (isArr(item)) {
       flatArr(item)
     } else {
       res.push(item)
